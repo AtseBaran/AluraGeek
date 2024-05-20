@@ -1,0 +1,157 @@
+/* Resetear estilos */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* Estilos adicionales */
+body {
+    line-height: 1;
+    font-family: 'Roboto', sans-serif;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+header, footer {
+    background-color: #5D04D9;
+    padding: 20px;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+}
+
+.logo {
+    display: inline-flex
+}
+
+.corazones {
+    height: 40px;
+    width: auto;
+}
+
+.titulo {
+    height: 20px;
+    width: auto;
+    margin: 7px;
+}
+
+.main-container {
+    display: flex;
+}
+
+.main-container-products {
+    margin: 20px;
+    text-align: center;
+    width: 70%;
+}
+
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 100px;
+    height: 150px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #5D04D9;
+    color: white;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card .card-container--info{
+    text-align: center;
+}
+
+.card .card-container--value {
+    display: ruby-text;
+    height: 40px;
+    width: 100%;
+}
+
+.card .delete-button {
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+
+.main-container-form {
+    margin: 20px;
+    text-align: center;
+    width: 30%;
+}
+
+.main-container-form input {
+    width: 100%;
+    height: 40px;
+    border: #5D04D9 2px solid;
+    border-radius: 25px;
+    color: #5D04D9;
+    padding: 5px;
+    margin: 10px 0px;
+}
+
+.main-container-form button {
+    width: 40%;
+    height: 40px;
+    border: #5D04D9 2px solid;
+    border-radius: 5px;
+    color: #5D04D9;
+    padding: 5px;
+    margin: 10px 0px;
+}
+
+.main-container-form #button {
+    background-color: #5D04D9;
+    color: white;
+}
+
+@media screen and (max-width: 768px){
+    .main-container {
+        flex-direction: column;
+    }
+    .main-container section {
+        width: 80%;
+        margin: 5%;
+        padding: 5%;
+    }
+};
